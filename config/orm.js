@@ -1,5 +1,8 @@
+// Import MySQL connection.
 var connection = require('./connection.js');
 
+// Object for all our SQL statement functions.This will 
+// Retrieve all the data from the database
 var orm = {
 	all: function(tableInput, cb){
 		connection.query('SELECT * FROM ' +tableInput+';', function(err, result){
@@ -16,7 +19,7 @@ var orm = {
 	},
 
 	create: function(tableInput, val, cb){
-		connection.query('INSERT INTO '+tableInput+" (burger_name) VALUES ('"+val+"');", function(err, result){ if (err) throw err;
+		connection.query('INSERT INTO '+tableInput+" (burger_name) VALUES ('"+val+"'); ", function(err, result){ if (err) throw err;
 			cb(result);
 		})
 	}
