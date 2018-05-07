@@ -4,7 +4,7 @@ body {
     color: #141414;
 }
 
-.jumbotron {
+.jumbotron h1{
     color: black;
     margin-top: 20px;
     opacity: .75;
@@ -12,24 +12,25 @@ body {
     margin-bottom: 20px;
 }
 
-.jumbotron h1 {
-    font-size: 36px;
-}
-
-.heading {
-    font-size: 20px;
+h1 {
+    font-size: 25px;
     font-weight: bold;
-    color: #FF851B;
+    color: white;
     display: block;
     margin: 0 auto;
+    text-align: center;
 }
 
-li {
-    list-style-type: none;
-}
 
-.burgerType {
-    font-size: 18px;
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .btnDevour {
@@ -42,7 +43,7 @@ li {
     display: inline-block;
 }
 
-#btnCreate {
+.btnCreate {
     display: block;
     margin: 0 auto;
     background: #FF851B;
@@ -53,19 +54,48 @@ li {
     margin-bottom: 10px;
 }
 
-#btnDelete {
-    display: block;
+
+#main { 
+    width: 800px;
     margin: 0 auto;
 }
-
-ul,
-li {
-    list-style-type: none;
-    list-style-position: inside;
-    margin: 0;
-    padding: 0;
+#sidebar    {
+    width: 400px;
+    height: 400px;
+    background: red;
+    float: left;
 }
 
-.rightBurgers {
+#page-wrap  {
+    width: 400px;
+    height: 400px;
+    background: #ffffff;
     float: right;
 }
+
+#enter_text {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+    width: 500px;
+    position: relative;
+    left: 340px;
+}
+#text-enter-button:focus {
+    background-color: lightblue;
+}
+
+
+#enter_burger {
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    opacity: .75;
+    margin-bottom: 20px;
+}
+
+
+
+
